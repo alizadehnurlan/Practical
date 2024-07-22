@@ -1,12 +1,11 @@
 import { NavLink } from "react-router-dom"
-import styles from "./style.module.css"
+
 import Logo from "../../../public/images/logo.png"
 import { navlink } from "../Data/dummydata"
 import { useState } from "react"
 import { Menu } from "@mui/icons-material"
 
 
-const { container, logo, nav, toggle, icon, hideMenu } = styles
 
 
 
@@ -17,11 +16,11 @@ const Header = () => {
     return (
         <>
             <header>
-                <div className={container}>
-                    <div className={logo}>
+                <div className='container flexsb'>
+                    <div className='logo'>
                         <img src={Logo} alt="Logo" />
                     </div>
-                    <div className={responsive ? hideMenu : nav}>
+                    <div className={responsive ? 'hideMenu' : "nav"}>
                         {
                             navlink.map(({ url, text, id }) => {
                                 return (
@@ -30,8 +29,8 @@ const Header = () => {
                             })
                         }
                     </div>
-                    <button className={toggle} onClick={() => setResponsive(!responsive)}>
-                        <Menu className={icon}></Menu>
+                    <button className='toggle' onClick={() => setResponsive(!responsive)}>
+                        <Menu className='icon'></Menu>
                     </button>
                 </div>
             </header>
