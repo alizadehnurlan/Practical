@@ -12,7 +12,7 @@ const Services = () => {
                         {
                             services.map((item, i) => {
                                 return (
-                                    <div key={i} className='box'>
+                                    <div key={i} className='box' data-aos='flip-left'>
                                         <i>{item.icon}</i>
                                         <h3>{item.title}</h3>
                                         <p>{item.desc}</p>

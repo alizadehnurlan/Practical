@@ -1,5 +1,6 @@
 import About from '../../Pages/About'
 import Blog from '../../Pages/Blog'
+import Contact from '../../Pages/Contact'
 import Counter from '../../Pages/Counter'
 import Portfolio from '../../Pages/Portfolio'
 import Services from '../../Pages/Sevices'
@@ -16,6 +17,7 @@ const Home = () => {
     <Portfolio/>
     <Testimonials/>
     <Blog/>
+    <Contact/>
     </>
   )
 }

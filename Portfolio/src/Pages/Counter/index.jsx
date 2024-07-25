@@ -10,7 +10,7 @@ const Counter = () => {
             {
                 project.map((item,i)=>{
                     return(
-                        <div key={i} className='box'>
+                        <div key={i} className='box' data-aos='zoom-in'>
                             <i>{item.icon}</i>
                             <h1 className='heading'>
                             <CountUp end={item.num} duration={2} />

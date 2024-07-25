@@ -11,12 +11,12 @@ const Hero = () => {
                     home.map(({ text, name, post, design, desc, id }) => {
                         return (
                             <div key={id} className='heroContainer'>
-                                <h3>
+                                <h3 data-aos='fade-right'>
                                     {text}
                                 </h3>
                                 <h1 >
                                     <Typewriter
-                                        words={['Nurlan Alizadeh', 'Front End Developer']}
+                                        words={['Nurlan Alizadeh', 'Web Developer']}
                                         loop={true}
                                         cursor
                                         cursorStyle='_'
@@ -25,9 +25,9 @@ const Hero = () => {
                                         delaySpeed={1000}
                                     />
                                 </h1>
-                                <p>{desc}</p>
-                                <button className='primaryBtn'>Download CV</button>
-                               
+                                <p data-aos='fade-right'> {desc}</p>
+                                <button data-aos='fade-up-right' className='primaryBtn'>Download CV</button>
+
                             </div>
                         )
 

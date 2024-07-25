@@ -1,12 +1,10 @@
 import { Link, NavLink } from "react-router-dom"
-
 import Logo from "../../../public/images/logo.png"
 import { navlink } from "../Data/dummydata"
 import { useState } from "react"
 import { Menu } from "@mui/icons-material"
-
-
-
+import 'aos/dist/aos.css'
+import Aos from 'aos'
 
 
 const Header = () => {
@@ -18,13 +16,13 @@ const Header = () => {
             <header>
                 <div className='container flexsb'>
                     <Link to='/' className='logo'>
-                        <img src={Logo} alt="Logo" />
+                        <img src={Logo} alt="Logo" data-aos='zoom-in-right' />
                     </Link>
                     <div className={responsive ? 'hideMenu' : "nav"}>
                         {
                             navlink.map(({ url, text, id }) => {
                                 return (
-                                    <NavLink key={id} to={url}>{text}</NavLink>
+                                    <NavLink  data-aos='zoom-in-right' key={id} to={url}>{text} </NavLink>
                                 )
                             })
                         }

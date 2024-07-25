@@ -12,7 +12,7 @@ const About = () => {
                                 <div className='left' >
                                     <img src={val.cover} alt="" />
                                 </div>
-                                <div className='right'>
+                                <div className='right' data-aos='fade=down-left'>
                                     <Heading title='About Me' />
                                     <p>{val.desc}</p>
                                     <p>{val.desc1}</p>

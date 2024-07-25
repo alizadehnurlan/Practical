@@ -13,18 +13,18 @@ const Blog = () => {
 
                             blog.map((val) => {
                                 return (
-                                    <div key={val.id} className="box">
-                                        <div className="img">
-                                            <img src={val.cover} />
+                                    <div key={val.id} className="box" data-aos='flip-left'>
+                                        <div className="img" data-aos='flip-up'>
+                                            <img src={val.cover} data-aos='flip-down' />
                                         </div>
                                         <div className="text">
-                                            <h3>
+                                            <h3 data-aos='flip-right'>
                                                 {val.title}
                                             </h3>
-                                            <label>
-                                               By {val.author} {val.date}
+                                            <label data-aos='flip-left'>
+                                                By {val.author} {val.date}
                                             </label>
-                                            <p>{val.desc}</p>
+                                            <p data-aos='fade-up-right'>{val.desc}</p>
                                         </div>
                                     </div>
                                 )
