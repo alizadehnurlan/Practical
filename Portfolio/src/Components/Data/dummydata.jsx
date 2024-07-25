@@ -1,4 +1,4 @@
-import { Settings, CropRotate, ViewInAr, PieChart, Code, BarChart, CloudOutlined, FavoriteBorder, Public, PersonOutlined, AddLocationAltOutlined, PhoneIphone, EmailOutlined, Facebook, Twitter, Instagram, YouTube } from "@mui/icons-material"
+import { Settings, CropRotate, ViewInAr, PieChart, Code, BarChart, CloudOutlined, FavoriteBorder, Public, PersonOutlined, AddLocationAltOutlined, PhoneIphone, EmailOutlined, Facebook, Twitter, Instagram, YouTube, BugReport, Web, Cloud, Terminal, DataUsage } from "@mui/icons-material"
 
 export const navlink = [
   {
@@ -59,41 +59,41 @@ export const about = [
 export const services = [
   {
     id: 1,
-    icon: <Settings />,
-    title: "Creative Design",
-    desc: "Lorem Ipsum simply text of the printing and type setting industry when an unknown printing simply",
+    icon: <Code />,
+    title: "Web Development",
+    desc: "Building modern, responsive, and efficient websites and web applications using the latest technologies and frameworks.",
   },
   {
     id: 2,
-    icon: <CropRotate />,
-    title: "Clean Code",
-    desc: "Lorem Ipsum simply text of the printing and type setting industry when an unknown printing simply",
+    icon: <BugReport />,
+    title: "Debugging & Testing",
+    desc: "Identifying and fixing bugs, and ensuring high quality through comprehensive testing and debugging processes.",
   },
   {
     id: 3,
-    icon: <ViewInAr />,
-    title: "Responsive Design",
-    desc: "Lorem Ipsum simply text of the printing and type setting industry when an unknown printing simply",
+    icon: <Web />,
+    title: "Front-End Optimization",
+    desc: "Improving website performance and loading times with optimization techniques and best practices for front-end development.",
   },
   {
     id: 4,
-    icon: <PieChart />,
-    title: "Material UI	",
-    desc: "Lorem Ipsum simply text of the printing and type setting industry when an unknown printing simply",
+    icon: <DataUsage />,
+    title: "API Integration",
+    desc: "Integrating and interacting with APIs to extend functionality and enable data exchange between services and applications.",
   },
   {
     id: 5,
-    icon: <Code />,
-    title: "Material UI Icons",
-    desc: "Lorem Ipsum simply text of the printing and type setting industry when an unknown printing simply",
+    icon: <Terminal />,
+    title: "Version Control",
+    desc: "Managing and tracking code changes using version control systems like Git, ensuring smooth collaboration and code management.",
   },
   {
     id: 6,
-    icon: <BarChart />,
-    title: "Awesome Support",
-    desc: "Lorem Ipsum simply text of the printing and type setting industry when an unknown printing simply",
+    icon: <Cloud />,
+    title: "Cloud Services",
+    desc: "Leveraging cloud platforms for deployment, scaling, and managing web applications and services.",
   },
-]
+];
 export const project = [
   {
     id: 1,
@@ -169,7 +169,7 @@ export const testimonials = [
     id: 1,
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitordapibus dictum.Fusce faucibus ligula scelerisque, eleifend turpis in",
     image: "./images/testimonials/team-1.png",
-    name: "Alamin Musa",
+    name: "Alizadeh Nurlan",
     post: "Front End Developer",
   },
   {

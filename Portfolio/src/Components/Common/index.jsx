@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 
 import Logo from "../../../public/images/logo.png"
 import { navlink } from "../Data/dummydata"
@@ -17,9 +17,9 @@ const Header = () => {
         <>
             <header>
                 <div className='container flexsb'>
-                    <div className='logo'>
+                    <Link to='/' className='logo'>
                         <img src={Logo} alt="Logo" />
-                    </div>
+                    </Link>
                     <div className={responsive ? 'hideMenu' : "nav"}>
                         {
                             navlink.map(({ url, text, id }) => {
